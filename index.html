@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
     <body>
-        List services' link here!
+        <ul>
+            <li><a class='service-link' id='docs'>資料システム</a></li>
+        </ul>
     </body>
+    <script type='text/javascript'>
+        // 動的にサービスのリンクアドレスを生成する
+        // class='service-link', id='hogehoge' となっているaタグのhrefを'http://hogehoge.kumano-ryo.com'などのようなurlに変更する
+        window.addEventListener("load", () => {
+            [].forEach.call(document.getElementsByClassName("service-link"), (link) => {
+                link.href = `http:\/\/${link.id}.${window.location.hostname.replace("www.", "")}`;
+            });
+        });
+    </script>
 </html>
