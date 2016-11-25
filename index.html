@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Materialize http://materializecss.com/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    </head>
     <body>
-        <ul>
-            <li><a href="http://kumano-ryo.jimdo.com/">一般の方向け</a></li>
-            <li><a href="./internal">寮生向け</a></li>
-            <li><a href="./dokama">OBの方向け</a></li>
-        </ul>
+        <nav style="margin-bottom: 100px">
+            <div class="nav-wrapper">
+                <a href="./" class="brand-logo">京都大学熊野寮</a>
+            </div>
+        </nav>
+
+        <div class="container center-align">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card-panel blue">
+                        <span><a href="http://kumano-ryo.jimdo.com/" class="white-text">寮外の方はこちらから</a></span>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel red">
+                        <span><a href="./internal" class="white-text">熊野寮生はこちらから</a></span>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel green">
+                        <span><a href="./dokama" class="white-text">熊野寮OBの方はこちらから</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
