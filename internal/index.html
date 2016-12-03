@@ -2,17 +2,8 @@
 <html>
     <body>
         <ul>
-            <li><a class='service-link' id='docs'>資料システム</a></li>
-            <li><a class='service-link' id='menu'>寮食メニュー</a></li>
+            <li><a class='service-link' href='docs.kumano-ryo.com'>資料システム</a></li>
+            <li><a class='service-link' href='menu.kumano-ryo.com'>寮食メニュー</a></li>
         </ul>
     </body>
-    <script type='text/javascript'>
-        // 動的にサービスのリンクアドレスを生成する
-        // class='service-link', id='hogehoge' となっているaタグのhrefを'http://hogehoge.kumano-ryo.com'などのようなurlに変更する
-        window.addEventListener("load", () => {
-            [].forEach.call(document.getElementsByClassName("service-link"), (link) => {
-                link.href = `http:\/\/${link.id}.${window.location.hostname.replace("www.", "")}`;
-            });
-        });
-    </script>
 </html>
